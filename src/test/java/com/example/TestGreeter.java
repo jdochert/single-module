@@ -44,6 +44,6 @@ public class TestGreeter {
   public void greetShouldIncludeGreetingButt() {
     String someone = "Butts";
 
-    assertThat(greeter.greet(someone).length(), is(lessThan(someone.length())));
+    assertThat(greeter.greet(someone).length(), is(greaterThan(someone.length())));
   }
 }
